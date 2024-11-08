@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title || 'Home' %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Optional additional CSS files -->
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+
+    <%- include('partials/nav.ejs') %>
+  </head>
+  <body>
+    <%- include('partials/footer.ejs') %>
+    <img class = "bg_image" src="https://images.unsplash.com/photo-1730908706088-df9aabe913ba?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bgimage">
+    <h1><%= "Welcome to my Web Page" %></h1>    
+    <img class="EricPic" src = "/images/EricPic.jpg">
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+  </body>
+</html>

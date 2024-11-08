@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <title><%= title %></title>
+  
+    
+    <%- include('partials/nav.ejs') %>
+  </head>
+  <body>
+    <%- include('partials/footer.ejs') %>
+    <img class = "bg_image" src="https://images.unsplash.com/photo-1730908706088-df9aabe913ba?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bgimage">
+    <h1><%= title %></h1>
+
+       <main>
+        <section>
+            <form action="submit-form.php" method="POST" id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Cell No:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" >
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" required minlength="1" maxlength="500"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+  </body>
+</html>
